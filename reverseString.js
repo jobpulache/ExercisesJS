@@ -7,4 +7,16 @@ function reverseString(string){
 //Join -> Une los elementos de un array en un string de text
 const reverse = reverseString('hello');
 console.log(reverse);
-//Esta es otra manera de resolver este ejercicio
+
+
+//Esta es otra manera de resolver este ejercicio usando el bucle for
+function reverseString2(string){
+   let reversed2=''
+   for (let i = string.length -1; i>=0;i--) {
+      reversed2 +=string[i]
+   }
+   return reversed2
+}
+const reverse2 = reverseString2('SoyManuRios')
+console.log(reverse2);
+
